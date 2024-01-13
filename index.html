@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="background-video">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="image/background.mp4" type="video/mp4">
+        </video>
+        <audio id="back-music" controls>
+            <source src="image/background-music.mp3" type="audio/mp3">
+        </audio>
+    </section>
   <section class="button-section">
-     <button id="rock-button">
+    <button id="rock-button">
     Rock
    </button>
    <button id="paper-button">
@@ -17,16 +25,16 @@
    <button id="scissors-button">
     Scissors
    </button>
-        <p class="results"></p> 
-        <p class="move-comparison"></p> 
-        <p class="scores"></p>  
+        <p class="results">May</p> 
+        <p class="move-comparison">The game</p> 
+        <p class="scores">Begin</p>  
   <button id="Reset-scores">
     Reset
 </button>
+<button id="begin-music">Start Music</button>
 </section>
-<script src="events.js"></script>
- <script src="move.js"></script>
-    
+    <script src="events.js"></script>
+    <script src="move.js"></script> 
     <script src="index.js"></script.>
 </body>
 </html>
